@@ -1,0 +1,77 @@
+div#colorpicker {
+	visibility:hidden;
+	font-family:Arial, Verdana, Lucida, sans;
+/*	font-size:.6em;*/
+	width:553px;
+	border:1px solid silver;
+	position:absolute;
+	top:0;
+	left:0;
+	background:white;
+	z-index:2000;
+}
+
+div#colorwheel {
+	height:257px;
+	cursor:crosshair;
+}
+
+html>body div#colorwheel {
+	background:transparent url(hsvwheel.png) no-repeat;
+	min-width:553px;
+}
+
+* html div#colorwheel {
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='hsvwheel.png', sizingMethod='crop');
+	width:553px;
+}
+
+div#cw_gui {
+	background-color:	ThreeDFace;
+	border-top:1px solid ThreeDHighlight;
+	height:42px;
+	line-height:42px;
+	overflow:auto;
+}
+
+* html div#cw_gui {
+	height:48px;
+}
+
+div#cw_gui label {
+	margin-left:.3em;
+	font-weight:normal;
+}
+
+html>body div#cw_gui input {
+	margin-left:.2em;
+	margin-right:.2em;
+}
+
+span#cw_preview {
+	float:left;
+	width:45px;
+	height:36px;
+	margin:2px;
+	border:1px solid;
+	border-color:		ThreeDShadow ThreeDHighlight
+						ThreeDHighlight ThreeDShadow;
+
+}
+
+.cw_button {
+	margin-left:.2em;
+}
+
+#cw_indicator {
+	width:10px;
+	height:10px;
+	position:absolute;
+	background:url(circle.png);
+}
+
+* html #cw_indicator {
+	line-height:0;
+	font-size:0;
+	background:url(circle.gif);
+}
